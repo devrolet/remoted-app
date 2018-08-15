@@ -1,0 +1,11 @@
+.navbar {
+    margin-bottom: 0px;
+    background: transparent;
+    color: white !important;
+    border-bottom: none;
+    z-index: 1;
+}
+
+.navbar-default ,.navbar-brand, .navbar a{
+    color: white;
+}
