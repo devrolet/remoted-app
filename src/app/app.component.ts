@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'PyruTek';
-  name = 'Chet Hill';
-  desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
+  // title = 'Welcome To The Remoted App';
+  // name = 'Chet Hill';
+  // desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
 }

@@ -14,6 +14,8 @@ import { FeaturedJobsComponent } from './job-board/featured-jobs/featured-jobs.c
 import { FooterComponent } from './footer/footer.component';
 import { JobDetailComponent } from './job-board/job-detail/job-detail.component';
 import { AddJobFormComponent } from './job-board/add-job-form/add-job-form.component';
+import { AdBtnComponent } from './job-board/ad-btn/ad-btn.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { AddJobFormComponent } from './job-board/add-job-form/add-job-form.compo
     FeaturedJobsComponent,
     FooterComponent,
     JobDetailComponent,
-    AddJobFormComponent
+    AddJobFormComponent,
+    AdBtnComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
