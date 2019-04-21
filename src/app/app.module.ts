@@ -13,6 +13,7 @@ import { JobBoardComponent } from './job-board/job-board.component';
 import { FeaturedJobsComponent } from './job-board/featured-jobs/featured-jobs.component';
 import { FooterComponent } from './footer/footer.component';
 import { JobDetailComponent } from './job-board/job-detail/job-detail.component';
+import { AddJobFormComponent } from './job-board/add-job-form/add-job-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { JobDetailComponent } from './job-board/job-detail/job-detail.component'
     JobBoardComponent,
     FeaturedJobsComponent,
     FooterComponent,
-    JobDetailComponent
+    JobDetailComponent,
+    AddJobFormComponent
   ],
   imports: [
     BrowserModule,
