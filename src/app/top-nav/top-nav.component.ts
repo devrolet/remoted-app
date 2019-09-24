@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-nav.component.css']
 })
 export class TopNavComponent implements OnInit {
-  title = 'Remoted';
+  company = 'Remoted App';
   name = 'Chet Hill';
   desc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
 

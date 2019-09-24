@@ -11,3 +11,20 @@ export class Job {
         this.description = desc;
     }
 }
+
+/* 
+    Other Information Needed
+    Job Category *
+    Full Time/Contract
+    Headquarters/Location
+    Region
+    Apply Link *
+
+    Company Model
+    companyName
+    companyStatement
+    companyLogo
+    companyURL
+    companyEmail
+    companyDesc
+*/
