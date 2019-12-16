@@ -7,7 +7,7 @@ import { Job } from '../job-board/job.model';
 export class JobService {
   jobSelected = new EventEmitter<Job>();
 
-  private jobs: Job[] = [
+  jobs: Job[] = [
     new Job(
       'Front End Developer',
       'GoGetter Design',

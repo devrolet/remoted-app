@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from '../job.service';
+import { Job } from '../job.model';
 
 @Component({
   selector: 'app-featured-jobs',
@@ -8,12 +9,21 @@ import { JobService } from '../job.service';
   providers: [JobService]
 })
 export class FeaturedJobsComponent implements OnInit {
-  title = 'Front-End Developer';
-  company = 'Chill Creative';
-  salary = '100k-120k';
+  // title = 'Front-End Developer';
+  // company = 'Chill Creative';
+  // salary = '100k-120k';
+
+  jobs: {
+    name: string,
+    company: string,
+    logoPath: string,
+    description: string
+  }[] = [];
 
   constructor(private jobService: JobService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.jobs = this.jobService.jobs;
+  }
 
 }

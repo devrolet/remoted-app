@@ -12,7 +12,7 @@ export class Job {
     }
 }
 
-/* 
+/*
     Other Information Needed
     Job Category *
     Full Time/Contract

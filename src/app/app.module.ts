@@ -16,6 +16,7 @@ import { JobDetailComponent } from './job-board/job-detail/job-detail.component'
 import { AddJobFormComponent } from './job-board/add-job-form/add-job-form.component';
 import { AdBtnComponent } from './job-board/ad-btn/ad-btn.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { JobService } from './job-board/job.service';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { AppRoutingModule } from './/app-routing.module';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [JobService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
