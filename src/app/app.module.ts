@@ -3,10 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
-import { ServersComponent } from './servers/servers.component';
-import { WarningAlertComponent } from './servers/warning-alert/warning-alert.component';
-import { SuccessAlertComponent } from './servers/success-alert/success-alert.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { JobBoardComponent } from './job-board/job-board.component';
@@ -17,14 +13,11 @@ import { AddJobFormComponent } from './job-board/add-job-form/add-job-form.compo
 import { AdBtnComponent } from './job-board/ad-btn/ad-btn.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { JobService } from './job-board/job.service';
+import { LandingComponent } from './landing/landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ServerComponent,
-    ServersComponent,
-    WarningAlertComponent,
-    SuccessAlertComponent,
     TopNavComponent,
     JumbotronComponent,
     JobBoardComponent,
@@ -32,7 +25,8 @@ import { JobService } from './job-board/job.service';
     FooterComponent,
     JobDetailComponent,
     AddJobFormComponent,
-    AdBtnComponent
+    AdBtnComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +34,6 @@ import { JobService } from './job-board/job.service';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [JobService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

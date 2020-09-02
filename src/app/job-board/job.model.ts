@@ -4,11 +4,15 @@ export class Job {
     public logoPath: string;
     public description: string;
 
-    constructor(name: string, company: string, logoPath: string, desc: string) {
-        this.name = name;
-        this.company = company;
-        this.logoPath = logoPath;
-        this.description = desc;
+    constructor(
+        name: string,
+        company: string,
+        logoPath: string,
+        desc: string) {
+            this.name = name;
+            this.company = company;
+            this.logoPath = logoPath;
+            this.description = desc;
     }
 }
 

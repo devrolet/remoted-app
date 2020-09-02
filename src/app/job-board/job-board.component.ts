@@ -5,24 +5,21 @@ import { JobService } from '../job-board/job.service';
 @Component({
   selector: 'app-job-board',
   templateUrl: './job-board.component.html',
-  styleUrls: ['./job-board.component.css'],
-  providers: [JobService]
+  styleUrls: ['./job-board.component.css']
 })
 export class JobBoardComponent implements OnInit {
-  @Input() job: Job;
+  // @Input() job: Job;
+
+  jobs: {
+    name: string,
+    company: string,
+    logoPath: string,
+    description: string
+  }[] = [];
 
   constructor(private jobService: JobService) { }
-  title = 'Front-End Developer';
-  company = 'Chill Creative';
-  salary = '100k-120k';
-
-  onLoadJobs(name: string,
-             company: string,
-             logoPath: string,
-             desc: string) {
-               this.jobService.getJobs();
-             }
 
   ngOnInit() {
+    this.jobs = this.jobService.jobs;
   }
 }

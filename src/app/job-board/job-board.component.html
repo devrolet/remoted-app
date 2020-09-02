@@ -5,12 +5,12 @@
         <h3>Latest Jobs</h3>
         <table class="table">
           <tbody>
-            <tr>
+            <tr *ngFor="let job of jobs">
               <!-- Image Here -->
               <td class="table-img"><img src="#" class="thumb-img" width="50" height="50"></td> 
-              <td><h4><a>{{title}}</a></h4></td>
-              <td><h5>{{company}}</h5></td>
-              <td>${{salary}}</td>
+              <td><h4><a>{{job.name}}</a></h4></td>
+              <td><h5>{{job.company}}</h5></td>
+              <td>$50,000</td>
               <td>1d</td>
             </tr>
           </tbody>

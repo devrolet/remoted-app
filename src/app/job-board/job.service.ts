@@ -25,6 +25,12 @@ export class JobService {
       'Black Rose Code',
       'https://www.maxpixel.net/static/photo/1x/Cooking-Meat-Recipe-Dinner-Restaurant-Grill-Beef-2508859.jpg',
       'Lorum Ipsum was here to be used for dummy text.'
+    ),
+    new Job(
+      'Full Stack Developer',
+      'Olorun',
+      'https://www.maxpixel.net/static/photo/1x/Cooking-Meat-Recipe-Dinner-Restaurant-Grill-Beef-2508859.jpg',
+      'Lorum Ipsum was here to be used for dummy text.'
     )
   ];
 

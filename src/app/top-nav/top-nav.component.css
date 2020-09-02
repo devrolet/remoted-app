@@ -1,6 +1,7 @@
 .navbar {
     margin-bottom: 0px;
-    background: transparent;
+    /* background: transparent; */
+    background: #333333;
     color: white !important;
     border-bottom: none;
     z-index: 1;
@@ -8,4 +9,8 @@
 
 .navbar-default ,.navbar-brand, .navbar a{
     color: white;
+}
+
+.navbar a:hover, .navbar a:focus {
+    color: gold;
 }
